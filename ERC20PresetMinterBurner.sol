@@ -1,12 +1,9 @@
 // SPDX-License-Identifier: MIT
-
 pragma solidity ^0.8.0;
-
-import "@openzeppelin/contracts/access/AccessControlEnumerable.sol";
-import "@openzeppelin/contracts/utils/Context.sol";
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "@openzeppelin/contracts/token/ERC20/ERC20Burnable.sol";
-
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v4.0/contracts/access/AccessControlEnumerable.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v4.0/contracts/utils/Context.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v4.0/contracts/token/ERC20/ERC20.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v4.0/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 /**
  * @dev {ERC20} token, including:
  *
@@ -27,7 +24,6 @@ contract ERC20PresetMinterBurner is
 {
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
     bytes32 public constant BURNER_ROLE = keccak256("BURNER_ROLE");
-
     /**
      * @dev Grants `DEFAULT_ADMIN_ROLE`, `MINTER_ROLE` and `BURNER_ROLE` to the
      * account that deploys the contract.
@@ -36,11 +32,9 @@ contract ERC20PresetMinterBurner is
      */
     constructor(string memory name, string memory symbol) ERC20(name, symbol) {
         _setupRole(DEFAULT_ADMIN_ROLE, _msgSender());
-
         _setupRole(MINTER_ROLE, _msgSender());
         _setupRole(BURNER_ROLE, _msgSender());
     }
-
     /**
      * @dev Creates `amount` new tokens for `to`.
      *
@@ -57,7 +51,6 @@ contract ERC20PresetMinterBurner is
         );
         _mint(to, amount);
     }
-
     /**
      * @dev Burns `amount` tokens from `from`
      *
