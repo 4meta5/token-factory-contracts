@@ -1,9 +1,9 @@
 [package]
 name = 'abi-gen'
 description = 'generate raw abi calls for runtime'
-license = 'GPL-3.0-only'
+license = 'Unlicense'
 version = '0.1.0'
-authors = ["anon"]
+authors = ["Amar Singh <asingchrony@protonmail.com>"]
 edition = '2018'
 
 [[bin]]
