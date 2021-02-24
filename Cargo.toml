@@ -1,0 +1,15 @@
+[package]
+name = 'abi-gen'
+description = 'generate raw abi calls for runtime'
+license = 'GPL-3.0-only'
+version = '0.1.0'
+authors = ["anon"]
+edition = '2018'
+
+[[bin]]
+name = 'abi-gen'
+path = 'src/main.rs'
+
+[dependencies]
+tiny-keccak = { version = "2.0.1", features = ["sha3"] }
+hex = "0.4"

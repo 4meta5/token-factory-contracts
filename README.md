@@ -1,1 +1,1 @@
-# erc-factory-contracts
+# token-factory-contracts
