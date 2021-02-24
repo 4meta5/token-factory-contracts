@@ -1,6 +1,6 @@
 [package]
 name = 'abi-gen'
-description = 'generate raw abi calls for runtime'
+description = 'Compute Method Ids for EVM calldata'
 license = 'Unlicense'
 version = '0.1.0'
 authors = ["Amar Singh <asingchrony@protonmail.com>"]

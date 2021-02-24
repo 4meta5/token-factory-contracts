@@ -5,5 +5,5 @@ The Solidity contract gives the caller the `MINTER_ROLE` and `BURNER_ROLE` to mi
 The Rust code computes the format for calls to a local EVM instance. 
 
 References:
-* https://docs.soliditylang.org/en/v0.4.24/abi-spec.html
+* https://docs.soliditylang.org/en/v0.8.1/abi-spec.html
 * https://medium.com/@hayeah/how-to-decipher-a-smart-contract-method-call-8ee980311603
